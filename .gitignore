@@ -1,2 +1,19 @@
-# Project exclude paths
-/bin/
+# Arquivos compilados do Java
+*.class
+bin/
+out/
+target/
+
+# Configurações do Mac
+.DS_Store
+
+# Configurações do IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Configurações antigas do Eclipse
+.metadata/
+.settings/
+.classpath
+.project
