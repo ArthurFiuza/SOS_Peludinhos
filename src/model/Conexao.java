@@ -5,12 +5,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
-
 public class Conexao {
-	private static String Url = "jdbc:sqlserver://10.109.8.9:1433;databaseName=DA123_Exerc_G03;"
-			+ "user=DA123_Exerc_G03;password=;" + "encrypt=false;trustServerCertificate=true;loginTimeout=30;";
-			
-			
+	// Sintaxe correta para parâmetros na URL do PostgreSQL
+	private static String Url = "jdbc:postgresql://localhost:5432/postgres"
+			+ "?user=Fiuza&password=&ssl=false&loginTimeout=30";
+
 			//"jdbc:sqlserver://DESKTOP-E47HG2N:1433;databaseName=DA123_Exerc_G03;integratedSecurity=true;encrypt=false;";
 	
 
@@ -21,7 +20,7 @@ public class Conexao {
 			// Conexão com o banco
 			conexao = DriverManager.getConnection(Url);		
 		} catch (SQLException ex) {
-			JOptionPane.showMessageDialog(null, "Erro deconexão!\nERRO: " + ex.getMessage());
+			JOptionPane.showMessageDialog(null, "Erro de conexão!\nERRO: " + ex.getMessage());
 		}
 	}
 

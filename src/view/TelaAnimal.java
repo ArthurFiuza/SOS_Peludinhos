@@ -74,6 +74,7 @@ public class TelaAnimal {
 		btnGravar.setFocusPainted(false);
 		btnGravar.setContentAreaFilled(false);
 		btnGravar.setOpaque(true);
+		btnGravar.setBorderPainted(false);
 		btnGravar.setBackground(new Color(98, 68, 47));
 		btnGravar.setForeground(Color.WHITE);
 		btnGravar.addActionListener(new ActionListener() {
@@ -101,6 +102,7 @@ public class TelaAnimal {
 		btnLimparCampos.setFocusPainted(false);
 		btnLimparCampos.setContentAreaFilled(false);
 		btnLimparCampos.setOpaque(true);
+		btnLimparCampos.setBorderPainted(false);
 		btnLimparCampos.setBackground(new Color(98, 68, 47));
 		btnLimparCampos.setForeground(Color.WHITE);
 		btnLimparCampos.addActionListener(new ActionListener() {
@@ -118,6 +120,7 @@ public class TelaAnimal {
 		btnAtualizar.setFocusPainted(false);
 		btnAtualizar.setContentAreaFilled(false);
 		btnAtualizar.setOpaque(true);
+		btnAtualizar.setBorderPainted(false);
 		btnAtualizar.setBackground(new Color(98, 68, 47));
 		btnAtualizar.setForeground(Color.WHITE);
 		btnAtualizar.addActionListener(new ActionListener() {
@@ -141,6 +144,7 @@ public class TelaAnimal {
 		btnVoltarAoMenu.setFocusPainted(false);
 		btnVoltarAoMenu.setContentAreaFilled(false);
 		btnVoltarAoMenu.setOpaque(true);
+		btnVoltarAoMenu.setBorderPainted(false);
 		btnVoltarAoMenu.setBackground(new Color(98, 68, 47));
 		btnVoltarAoMenu.setForeground(Color.WHITE);
 		btnVoltarAoMenu.addActionListener(new ActionListener() {
@@ -223,11 +227,13 @@ public class TelaAnimal {
 		comboRaca.setEnabled(false);
 		controller.SelectRaca(comboRaca, comboRaca.getSelectedIndex());
 
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("D:\\AAI POO tudo\\AAI-POO 16_06_2025\\AAI-POO-11_06_2025-20250616T131620Z-1-001\\AAI-POO-11_06_2025\\AAI\\TRABALHO\\src\\imagem\\SOS gatinho.png"));
-		lblNewLabel.setBounds(27, 14, 50, 50);
-		frmPrincipal.getContentPane().add(lblNewLabel);
-		
+		JLabel IMGpeludinhos = new JLabel(""); // Removi o texto "New label"
+		IMGpeludinhos.setBounds(27, 14, 50, 50);
+		ImageIcon iconeOriginal = new ImageIcon(getClass().getResource("/imagem/Gato (2).png"));
+		java.awt.Image imagemEscalada = iconeOriginal.getImage().getScaledInstance(IMGpeludinhos.getWidth(), IMGpeludinhos.getHeight(), java.awt.Image.SCALE_SMOOTH);
+		IMGpeludinhos.setIcon(new ImageIcon(imagemEscalada));
+		frmPrincipal.getContentPane().add(IMGpeludinhos);
+
 		JLabel lblCpfDoCliente = new JLabel("CPF do Cliente:");
 		lblCpfDoCliente.setFont(new Font("Segoe UI", Font.BOLD, 14));
 		lblCpfDoCliente.setBounds(66, 110, 110, 15);

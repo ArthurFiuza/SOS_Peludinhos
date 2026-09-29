@@ -291,7 +291,7 @@ public class TelaAtendimento {
         frmPrincipal.getContentPane().add(lblNewLabel);
         
         JLabel IMGgato = new JLabel("");
-        IMGgato.setIcon(new ImageIcon("D:\\AAI POO tudo\\AAI-POO 16_06_2025\\AAI-POO-11_06_2025-20250616T131620Z-1-001\\AAI-POO-11_06_2025\\AAI\\TRABALHO\\src\\imagem\\Gato (2).png"));
+        IMGgato.setIcon(new ImageIcon("D:/imagem/Gato (2).png"));
         IMGgato.setBounds(200, 0, 114, 93);
         frmPrincipal.getContentPane().add(IMGgato);
         
@@ -344,6 +344,7 @@ public class TelaAtendimento {
 		btnGravar.setFocusPainted(false);
 		btnGravar.setContentAreaFilled(false);
 		btnGravar.setOpaque(true);
+		btnGravar.setBorderPainted(false);
 		btnGravar.setBackground(new Color(98, 68, 47));
 		btnGravar.setForeground(Color.WHITE);
 		
@@ -360,6 +361,7 @@ public class TelaAtendimento {
 		btnVoltarAoMenu.setFocusPainted(false);
 		btnVoltarAoMenu.setContentAreaFilled(false);
 		btnVoltarAoMenu.setOpaque(true);
+		btnVoltarAoMenu.setBorderPainted(false);
 		btnVoltarAoMenu.setBackground(new Color(98, 68, 47));
 		btnVoltarAoMenu.setForeground(Color.WHITE);
 		
@@ -374,6 +376,7 @@ public class TelaAtendimento {
 		btnLimparCampos.setFocusPainted(false);
 		btnLimparCampos.setContentAreaFilled(false);
 		btnLimparCampos.setOpaque(true);
+		btnLimparCampos.setBorderPainted(false);
 		btnLimparCampos.setBackground(new Color(98, 68, 47));
 		btnLimparCampos.setForeground(Color.WHITE);
 		frmPrincipal.getContentPane().add(btnLimparCampos);
@@ -417,10 +420,12 @@ public class TelaAtendimento {
 
 			}
 		});
-		btnListarAtendimentos.setOpaque(true);
 		btnListarAtendimentos.setForeground(Color.WHITE);
 		btnListarAtendimentos.setFont(new Font("Segoe UI", Font.BOLD, 11));
 		btnListarAtendimentos.setFocusPainted(false);
+		btnListarAtendimentos.setContentAreaFilled(false);
+		btnListarAtendimentos.setOpaque(true);
+		btnListarAtendimentos.setBorderPainted(false);
 		btnListarAtendimentos.setBackground(new Color(98, 68, 47));
 		btnListarAtendimentos.setBounds(10, 502, 137, 23);
 		frmPrincipal.getContentPane().add(btnListarAtendimentos);

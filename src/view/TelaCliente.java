@@ -75,6 +75,7 @@ public class TelaCliente {
 		btnGravar.setFocusPainted(false);
 		btnGravar.setContentAreaFilled(false);
 		btnGravar.setOpaque(true);
+		btnGravar.setBorderPainted(false);
 		btnGravar.setBackground(new Color(98, 68, 47));
 		btnGravar.setForeground(Color.WHITE);
 		btnGravar.addActionListener(new ActionListener() {
@@ -105,6 +106,7 @@ public class TelaCliente {
 		btnLimparCampos.setFocusPainted(false);
 		btnLimparCampos.setContentAreaFilled(false);
 		btnLimparCampos.setOpaque(true);
+		btnLimparCampos.setBorderPainted(false);
 		btnLimparCampos.setBackground(new Color(98, 68, 47));
 		btnLimparCampos.setForeground(Color.WHITE);
 
@@ -127,6 +129,7 @@ public class TelaCliente {
 		btnListarCliente.setFocusPainted(false);
 		btnListarCliente.setContentAreaFilled(false);
 		btnListarCliente.setOpaque(true);
+		btnListarCliente.setBorderPainted(false);
 		btnListarCliente.setBackground(new Color(98, 68, 47));
 		btnListarCliente.setForeground(Color.WHITE);
 		btnListarCliente.addActionListener(new ActionListener() {
@@ -150,6 +153,7 @@ public class TelaCliente {
 		btnVoltarAoMenu.setFocusPainted(false);
 		btnVoltarAoMenu.setContentAreaFilled(false);
 		btnVoltarAoMenu.setOpaque(true);
+		btnVoltarAoMenu.setBorderPainted(false);
 		btnVoltarAoMenu.setBackground(new Color(98, 68, 47));
 		btnVoltarAoMenu.setForeground(Color.WHITE);
 		btnVoltarAoMenu.addActionListener(new ActionListener() {
@@ -198,9 +202,9 @@ public class TelaCliente {
 		txtcpf.setText("xxx.xxx.xxx-xx");
 		txtcpf.setForeground(Color.GRAY);
 
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("D:\\AAI POO tudo\\AAI-POO 16_06_2025\\AAI-POO-11_06_2025-20250616T131620Z-1-001\\AAI-POO-11_06_2025\\AAI\\TRABALHO\\src\\imagem\\SOS gatinho.png"));
+		JLabel lblNewLabel = new JLabel("gato");
 		lblNewLabel.setBounds(10, 4, 50, 50);
+		lblNewLabel.setIcon(new ImageIcon(getClass().getResource("/imagem/SOS gatinho.png")));
 		frmPrincipal.getContentPane().add(lblNewLabel);
 
 		txtcpf.addFocusListener(new FocusListener() {

@@ -60,6 +60,9 @@ public class RelatorioAnimal {
         JButton btnCarregar = new JButton("Carregar Lista");
         btnCarregar.setFont(new Font("Segoe UI", Font.BOLD, 14));
         btnCarregar.setFocusPainted(false);
+        btnCarregar.setContentAreaFilled(false);
+        btnCarregar.setOpaque(true);
+        btnCarregar.setBorderPainted(false);
         btnCarregar.setBackground(new Color(98, 68, 47));
         btnCarregar.setForeground(Color.WHITE);
         btnCarregar.setBounds(10, 320, 150, 30);
@@ -69,6 +72,9 @@ public class RelatorioAnimal {
         JButton btnAtualizar = new JButton("Atualizar");
         btnAtualizar.setFont(new Font("Segoe UI", Font.BOLD, 14));
         btnAtualizar.setFocusPainted(false);
+        btnAtualizar.setContentAreaFilled(false);
+        btnAtualizar.setOpaque(true);
+        btnAtualizar.setBorderPainted(false);
         btnAtualizar.setBackground(new Color(44, 102, 54));
         btnAtualizar.setForeground(Color.WHITE);
         btnAtualizar.setBounds(230, 320, 150, 30);
@@ -78,6 +84,9 @@ public class RelatorioAnimal {
         JButton btnExcluir = new JButton("Excluir");
         btnExcluir.setFont(new Font("Segoe UI", Font.BOLD, 14));
         btnExcluir.setFocusPainted(false);
+        btnExcluir.setContentAreaFilled(false);
+        btnExcluir.setOpaque(true);
+        btnExcluir.setBorderPainted(false);
         btnExcluir.setBackground(new Color(150, 30, 30));
         btnExcluir.setForeground(Color.WHITE);
         btnExcluir.setBounds(442, 320, 150, 30);
@@ -106,6 +115,9 @@ public class RelatorioAnimal {
         btnVoltar.setForeground(Color.WHITE);
         btnVoltar.setFont(new Font("Segoe UI", Font.BOLD, 14));
         btnVoltar.setFocusPainted(false);
+        btnVoltar.setContentAreaFilled(false);
+        btnVoltar.setOpaque(true);
+        btnVoltar.setBorderPainted(false);
         btnVoltar.setBackground(new Color(98, 68, 47));
         btnVoltar.setBounds(10, 361, 150, 30);
         frame.getContentPane().add(btnVoltar);

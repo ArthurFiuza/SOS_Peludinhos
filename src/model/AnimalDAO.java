@@ -10,7 +10,7 @@ import javax.swing.JComboBox;
 public class AnimalDAO {
 	public void salvar(Animal animal, int codraca) {
 		String sql = "INSERT INTO Animal (nomeAnimal, DTNascimento, codraca)"
-				+ "VALUES (?, ?, ?)";
+				+ "VALUES (?, ?::date, ?)";
 		Conexao.conectar();
 		try(Connection coon = Conexao.conexao;
 			PreparedStatement stmt = coon.prepareStatement(sql)){
